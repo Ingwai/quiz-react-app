@@ -1,9 +1,7 @@
 import React from 'react';
 
-const Options = ({ question, dispatch, answer, points }) => {
+const Options = ({ question, dispatch, answer }) => {
 	const hasAnswered = answer !== null;
-
-	// dispatch({ type: 'newAnswer', payload: points });
 
 	return (
 		<div className='options'>
