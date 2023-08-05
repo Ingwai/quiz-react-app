@@ -1,6 +1,9 @@
 import React from 'react';
+import { useQuiz } from '../context/QuizContext';
 
-const StartScreen = ({ numQuestions, dispatch }) => {
+const StartScreen = () => {
+	const { numQuestions, dispatch } = useQuiz();
+
 	const handleStartQuiz = () => {
 		dispatch({ type: 'start' });
 	};
